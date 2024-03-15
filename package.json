@@ -1,17 +1,14 @@
 {
-	"name": "@asymmetrik/leaflet-d3",
+	"name": "@aredtech/leaflet-d3",
 	"artifactName": "leaflet-d3",
 	"moduleName": "leafletD3",
 	"description": "Custom d3 layers for leaflet",
-	"version": "6.0.1",
-	"author": "Asymmetrik, Ltd. a BlueHalo Company",
-	"copyright": "Copyright (c) 2007-2022 Asymmetrik Ltd, a BlueHalo Company",
+	"version": "1.0.0",
+	"author": "AReDTech",
 	"license": "MIT",
 	"scripts": {
 		"build": "npm run bundle",
-		"prebuild": "npm run lint",
 		"bundle": "npm run rollup && npm run uglify",
-		"lint": "eslint 'src/**/*.js'",
 		"prepare": "npm run build",
 		"rollup": "rollup -c rollup.config.js",
 		"uglify": "uglifyjs --comments 'license' -o ./dist/leaflet-d3.min.js -- ./dist/leaflet-d3.js",
@@ -22,7 +19,7 @@
 	"typings": "index.d.ts",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Asymmetrik/leaflet-d3.git"
+		"url": "git+https://github.com/aredtech/leaflet-d3.git"
 	},
 	"peerDependencies": {
 		"d3": "7",

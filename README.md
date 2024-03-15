@@ -1,4 +1,4 @@
-# @asymmetrik/leaflet-d3
+# @AReDTech/leaflet-d3
 
 [![Build Status][travis-image]][travis-url]
 
@@ -26,7 +26,7 @@ npm install d3 d3-hexbin leaflet
 If you want to grab the source files directly without using npm, or you want to run the examples, you can build the dist files directly.
 Simply check out the repository, and then build it with the following commands:
 ```
-git clone git@github.com:Asymmetrik/leaflet-d3.git
+git clone git@github.com:AReDTech/leaflet-d3.git
 cd leaflet-d3
 npm install
 npm run build
@@ -620,7 +620,7 @@ We've added a configurable option (pingLayer.radiusScaleFactor(...)) to provide 
 
 
 ## Contribute
-PRs accepted. If you are part of Asymmetrik, please make contributions on feature branches off of the ```develop``` branch. If you are outside of Asymmetrik, please fork our repo to make contributions.
+PRs accepted. If you are part of AReDTech, please make contributions on feature branches off of the ```develop``` branch. If you are outside of AReDTech, please fork our repo to make contributions.
 
 
 ## License
@@ -635,5 +635,5 @@ D3.js was created by the legendary [Mike Bostock](https://github.com/mbostock).
 [Leaflet](http://leafletjs.com/) is maintained by [lots of cool people](https://github.com/Leaflet/Leaflet/graphs/contributors).
 
 
-[travis-url]: https://travis-ci.org/Asymmetrik/leaflet-d3/
-[travis-image]: https://travis-ci.org/Asymmetrik/leaflet-d3.svg
+[travis-url]: https://travis-ci.org/AReDTech/leaflet-d3/
+[travis-image]: https://travis-ci.org/AReDTech/leaflet-d3.svg
