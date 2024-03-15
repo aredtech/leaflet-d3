@@ -266,6 +266,18 @@ L.HexbinLayer = L.SVG.extend({
 				.attr('d', function(d) {
 					return that._hexLayout.hexagon(that._scale.radius(that._fn.radiusValue.call(that, d)));
 				});
+		enter.merge(join.select('path.hexbin-hexagon'))
+		.on('mouseover', function(event, d, i) {
+			that._hoverHandler.mouseover.call(this, that, event, d, i);
+			that._dispatch.call('mouseover', this, event, d, i);
+		})
+		.on('mouseout', function(event, d, i) {
+			that._dispatch.call('mouseout', this, event, d, i);
+			that._hoverHandler.mouseout.call(this, that, event, d, i);
+		})
+		.on('click', function(event, d, i) {
+			that._dispatch.call('click', this, event, d, i);
+		});
 
 		// Grid
 		var gridEnter = enter.append('path').attr('class', 'hexbin-grid')
