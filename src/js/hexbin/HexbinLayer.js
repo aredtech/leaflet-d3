@@ -556,7 +556,6 @@ L.HexbinHoverHandler = {
 		// return the handler instance
 		return {
 			mouseover: function (hexLayer, event, data) {
-				var gCoords = d3.pointer(event);
 
 				tooltip
 					.style('visibility', 'visible')
@@ -569,8 +568,8 @@ L.HexbinHoverHandler = {
 				var h = div.clientHeight, w = div.clientWidth;
 
 				tooltip
-					.style('top', '' + event.clientY - gCoords[1] - h - 16 + 'px')
-					.style('left', '' + event.clientX - gCoords[0] - w/2 + 'px');
+					.style('top', '' + event.clientY - h - 16 + 'px')
+					.style('left', '' + event.clientX - w/2 + 'px');
 
 			},
 			mouseout: function (hexLayer, event, data) {
