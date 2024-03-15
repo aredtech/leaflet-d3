@@ -259,6 +259,7 @@ L.HexbinLayer = L.SVG.extend({
 			})
 			.attr('fill', that._fn.fill.bind(that))
 			.attr('fill-opacity', 0.01)
+			.style('pointer-events', that.options.pointerEvents)
 			.attr('stroke-opacity', 0.01)
 			.transition().duration(that.options.duration)
 				.attr('fill-opacity', that.options.opacity)
@@ -266,6 +267,7 @@ L.HexbinLayer = L.SVG.extend({
 				.attr('d', function(d) {
 					return that._hexLayout.hexagon(that._scale.radius(that._fn.radiusValue.call(that, d)));
 				});
+
 		enter.merge(join.select('path.hexbin-hexagon'))
 		.on('mouseover', function(event, d, i) {
 			that._hoverHandler.mouseover.call(this, that, event, d, i);
